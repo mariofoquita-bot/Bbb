@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard for Meta Quest 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soundboard for Meta Quest 3</h1>
+    <button onclick="playSound('sound1')">Sound 1</button>
+    <button onclick="playSound('sound2')">Sound 2</button>
+    <button onclick="playSound('sound3')">Sound 3</button>
+
+    <audio id="sound1" src="path/to/your/sound1.mp3"></audio>
+    <audio id="sound2" src="path/to/your/sound2.mp3"></audio>
+    <audio id="sound3" src="path/to/your/sound3.mp3"></audio>
+
+    <script>
+        function playSound(soundId) {
+            const sound = document.getElementById(soundId);
+            sound.play();
+        }
+    </script>
+</body>
+</html>
